@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_root_grid_item">
+
+
+    <com.ren.newalbumchoose.View.SquareLayout
+        android:id="@+id/choose_item_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/choose_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/img_default_album"
+            android:scaleType="centerCrop" />
+
+    </com.ren.newalbumchoose.View.SquareLayout>
+
+    <ImageView
+        android:id="@+id/choose_item_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/choose_item_square"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:clickable="false"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+        android:src="@mipmap/choose_image_no" />
+
+    <ImageView
+        android:id="@+id/choose_item_imagePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/chat_msg_video_play_icon"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>
